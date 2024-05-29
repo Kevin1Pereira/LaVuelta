@@ -346,7 +346,7 @@ footer{
         left: 0px;
       }
       .slider img {
-        width: 90vw;
+        width: 80vw;
         height: 60vh;
         object-fit: cover;
         display: flex;
