@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-a{
+a{ /*quitarle la apariencia a los enlaces*/
     text-decoration: none;
     display: flex;
     gap:2%;
@@ -12,7 +12,7 @@ a{
 
 
 
-.encabezado{
+.encabezado{ /*Config del encabezado que contiene el logo y los enlaces*/
     background-color: white;
     width: 100vw;
     height: 12vh;
@@ -21,30 +21,30 @@ a{
     align-items: center;
     padding-top: 0;
     padding-left: 7%;
-    position: sticky;
+    position: sticky; /*position para que el encabezado baje con la página*/
     top: 0;
     
 }
 
-.con2{
+.con2{ /*Contenedor de los enlaces*/
     width: 55%;
     display: flex;
     gap: 5%;
 }
 
-.logo,.hom{
+.logo,.hom{ /*Apariencia y disposicion del logo y la imagen del hombre con la maleta*/
     height: 100%;
     overflow: hidden;
     display: flex;
     align-items: center;
 }
 
-.imalogo{
+.imalogo{ /*Config unicamente del logo*/
     height: 12vh;
     object-fit: cover;
 }
 
-.bienve{
+.bienve{ /*Config del contenedor del texto con nuestro eslogan y la imagen del hombre con la maleta*/
     background-color: darkblue;
     width: 100vw;
     height: 75vh;
@@ -54,12 +54,12 @@ a{
     justify-content: center;
 }
 
-.imahom{
+.imahom{ /*Config unicamente de la imagen del hombre con la maleta*/
     height: 75%;
-    object-fit: cover;
+    object-fit: cover; /*Linea para que la img cubra todo el div*/
 }
 
-.dena,.dein{
+.dena,.dein{ /*Apariencia de los contenedores de los titulos amarillos*/
     width: 100vw;
     height: 25vh;
     display: flex;
@@ -70,7 +70,7 @@ a{
     margin-top: 3%;
 }
 
-.uno,.dos,.tre,.cua{
+.uno,.dos,.tre,.cua{ /*Configuraciones de los titulos*/
     background-color: yellow;
     display: flex;
     flex-direction: column;
@@ -79,25 +79,25 @@ a{
     transform: rotateZ(-4deg) ;
 }
 
-.uno{
+.uno{ /*Codigo para rotar un poco el titulo uno*/
     width: 25%;
     clip-path: polygon(4% 0, 100% 0, 96% 100%, 0 100%);
 }
 
-.dos,.tre,.cua{
+.dos,.tre,.cua{ /*Codigo para rotar un poco el titulo dos tres y cuatro*/
     clip-path: polygon(2% 0, 100% 0, 98% 100%, 0 100%);
     width: 20%;
 }
 
-.uno,.dos,.tre,.cua,.info2{
+.uno,.dos,.tre,.cua,.info2{ /*Texto de los titulos centrados por cualquier movimiento hacia abajo*/
     text-align: center;
 }
 
-.dos{
+.dos{ /*Separacion del segundo title con su bottom*/
     margin-bottom: 3%;
 }
 
-.imadena,.imadein{
+.imadena,.imadein{ /*Config de los contenedores de las imagenes*/
     width: 100vw;
     height: 55vh;
     display: flex;
@@ -109,16 +109,16 @@ a{
     width: 25%;
 }
 
-.imadein,.dein{
+.imadein,.dein{ /*Color darkblue a los necesarios*/
     background-color: darkblue;
 }
 
-.ina{
+.ina{ /*Config de las imagenes de los paquetes*/
     width: 18vw;
     height: 50vh;
 }
 
-.reque{
+.reque{ /*Contenedor de guias azules y amarillos*/
     width: 100vw;
     height: 90vh;
     color: #515151;
@@ -129,7 +129,7 @@ a{
     gap:1%;
 }
 
-.concaja{
+.concaja{ /*contenedor de las tres etiquetas requisitos de ingreso, etc*/
     width: 100%;
     height: 85%;
     display: flex;
@@ -138,20 +138,21 @@ a{
     gap:2%;
 }
 
-body{
+body{ /*quitar scroll horizontal*/
     overflow-x: hidden;
 }
 
-.regis,.comunic,.bioseg{
+.regis,.comunic,.bioseg{ /*Etiquetas requisitos de ingreso, comunicaciones, etc*/
     width: 25%;
     height: 95%;
     text-align: center;
 }
 
-.regis,.bioseg,.plane{
+.regis,.bioseg,.plane{ /*Mas config de color*/
     background-color: darkblue;
     color: white;
 }
+
 .regis,.bioseg,.comunic,.ca1{
     display: flex;
     flex-direction: column;
@@ -164,7 +165,7 @@ body{
     background-color: yellow;
 }
 
-.plane{
+.plane{ /*Contenedor de caja antes del footer*/
     width: 100vw;
     height: 80vh;
     display: flex;
@@ -173,17 +174,17 @@ body{
     padding-left: 20%;
 }
 
-.ca1{
+.ca1{ /*Primera caja de plane*/
     width: 50%;
     height: 100%;
 }
 
-.ca2,.imaplane{
+.ca2,.imaplane{ /*Segunda caja de plane y la img del plane*/
     width: 60vw;
     height: 100%;
 }
 
-.fp{
+.fp{ /*Texto de plane*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,17 +203,17 @@ footer{
     justify-content:center;
     margin-top: 2%;
 }
-.ina:hover{
+.ina:hover{ /*Borde iluminado al hacer hover sobre las imagenes de paquetes*/
     box-shadow: 0 0 40px rgba(255, 255, 255, 0.796);
     width: 22vw;
     height: 55vh;
     transform: translateY(-3vh);
 }
 
-.n1:hover,.n2:hover, .n3:hover, .n4:hover{
+.n1:hover,.n2:hover, .n3:hover, .n4:hover{ /*Borde iluminado azul al hacer hover sobre las imagenes de paquetes*/
     box-shadow: 0 0 40px darkblue;
 }
-.conscri,script{
+.conscri,script{ /*Elimacion del script y el slider en responsive pc*/
     display: none;
 }
 
@@ -222,7 +223,7 @@ footer{
         align-items: center;
     }
 
-    .inicio,.destna,.destin,.n2,.n3,.n4,.ni2,.ni3,.ni4,.imadena{
+    .inicio,.destna,.destin,.n2,.n3,.n4,.ni2,.ni3,.ni4,.imadena{ /*Eliminacion de partes que sobresaturarian el responsive cel*/
         display: none;
     }
 
@@ -321,7 +322,7 @@ footer{
         max-width: 100%;
     }
 
-    .conscri{
+    .conscri{ /*Contenedor del  slider*/
         display: flex;
         justify-content: center;
         align-items: center;
@@ -335,7 +336,7 @@ footer{
         overflow: hidden;
       }
 
-      .btn {
+      .btn { /*Iconos para pasar a la siguiente img en el slider*/
         width: 30px;
         height: 30px;
         display: flex;
@@ -348,13 +349,13 @@ footer{
         top: calc(50% - 15px);
         cursor: pointer;
       }
-      #right {
+      #right { /*icono derecha*/
         right: 0px;
       }
-      #left {
+      #left { /*icono izquierda*/
         left: 0px;
       }
-      .slider img {
+      .slider img { /*Las imagenes del slider*/
         width: 90vw;
         height: 60vh;
         object-fit: cover;
@@ -362,9 +363,11 @@ footer{
         align-items: center;
       }
       
-        
+      .imadein:hover{ /*hover mejorado de las imagenes en incio*/
+          width:90vw;
+      }
 
-    footer{
+    footer{ 
         margin-top: 10px;
     }
 
