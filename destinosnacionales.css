@@ -57,7 +57,7 @@ body{
     margin-top: 3%;
 }
 
-.imadena,.imadena2{
+.imadena,.imadena2{ /*Filas o columnas con las img de los paquetes de viaje*/
     width: 100vw;
     height: 55vh;
     display: flex;
@@ -78,12 +78,12 @@ body{
     width: 25%;
 }
 
-.ina{
+.ina{ /*imagenes de los paquetes de viajes*/
     width: 18vw;
     height: 50vh;
 }
 
-.espacio {
+.espacio { /*Div del carrucel*/
     perspective: 1000px;
     width: 100vw;
     height: 100vh;
@@ -93,7 +93,7 @@ body{
     margin-bottom: 15vh;
 }
 
-.tarjetas {
+.tarjetas { /*Contenedor de las targetas como tal*/
     transform-style: preserve-3d;
     position: relative;
     width: 27vw;
@@ -105,7 +105,7 @@ body{
     animation-fill-mode: forwards; 
 }
 
-.item {
+.item { /*div de la imagen*/
     position: absolute;
     width: 100%;
     height: 100%;
@@ -115,7 +115,7 @@ body{
     height: 100%;
     object-fit: cover;
 }
-.uno {
+.uno { /*imagen 1 del carrucel*/
     transform: translateZ(380px);
 }
 .dos {
@@ -134,7 +134,7 @@ body{
     transform: rotateY(300deg) translateZ(380px);
 }
 
-@keyframes rota{
+@keyframes rota{ /*Animacion del carrucel*/
     100%{
         transform: rotateY(360deg) ;
     }
@@ -154,14 +154,14 @@ footer{
     margin-top: 2%;
 }
 
-.ina:hover{
+.ina:hover{ /*paquetes de viajes hover*/
     box-shadow: 0 0 40px rgba(255, 255, 255, 0.796);
     width: 22vw;
     height: 55vh;
     transform: translateY(-3vh);
 }
 
-.conscri,script{
+.conscri,script{ /*Desaparecer*/
     display: none;
 }
 
