@@ -202,7 +202,16 @@ footer{
     justify-content:center;
     margin-top: 2%;
 }
+.ina:hover{
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.796);
+    width: 22vw;
+    height: 55vh;
+    transform: translateY(-3vh);
+}
 
+.n1:hover,.n2:hover, .n3:hover, .n4:hover{
+    box-shadow: 0 0 40px darkblue;
+}
 .conscri,script{
     display: none;
 }
