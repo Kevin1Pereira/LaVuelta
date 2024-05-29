@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos Internacionales</title>
+    <link rel="stylesheet" href="destinosinter.css">
+</head>
+<body>
+    <div class="encabezado">
+        <div class="logo"><img class="imalogo" src="logo.png" alt="logo"></div>
+        <div class="con2">
+            <div><a class="inicio"><a href="index.html"><h2>Inicio</h2></a></div>
+            <div class="destna"><a href="destinosnacionales.html"><h2>Destinos Nacionales</h2></a></div>
+            <div class="destin"><h2>Viajar A Destinos Internacionales</h2></div>
+        </div>
+        
+    </div> 
+
+    <div class="dena">
+        <div class="uno">
+            <h1>DESTINOS</h1>
+            <h2>INTERNACIONALES</h2>
+        </div>
+    </div>
+
+    <div class="espacio">
+        <div class="tarjetas">
+          <div class="item uno">
+            <img src="5i.png" alt="">
+          </div>
+          <div class="item dos">
+            <img src="2i.png" alt="">
+          </div>
+          <div class="item tres">
+            <img src="3i.png" alt="">
+          </div>
+          <div class="item cuatro">
+            <img src="4i.png" alt="">
+          </div>
+          <div class="item cinco">
+            <img src="5i.png" alt="">
+          </div>
+          <div class="item seis">
+            <img src="6i.png" alt="">
+          </div>
+        </div>
+    </div>
+
+    <div class="conscri">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <div class="slider">
+          <a href="destinosnacionales.html"><img src="" alt="" id="imagen"></a>
+          <span class="btn" id="left"><i class="fa-solid fa-chevron-left"></i></span>
+          <span class="btn" id="right"><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+    </div>
+      
+    
+    <script>
+      let imagen = document.getElementById("imagen");
+      let left = document.getElementById("left");
+      let right = document.getElementById("right");
+      let fotos = [
+        "1i.png",
+        "2i.png",
+        "3i.png"
+      ];
+      imagen.setAttribute("src", fotos[0]);
+      let posicion = 0;
+      left.addEventListener("click", retroceder);
+      function retroceder() {
+        if (posicion == 0) {
+          posicion = fotos.length - 1;
+        } else {
+          posicion--;
+        }
+        imagen.setAttribute("src", fotos[posicion]);
+      }
+      right.addEventListener("click", avanzar);
+      function avanzar() {
+        if (posicion == fotos.length - 1) {
+          posicion = 0;
+        } else {
+          posicion++;
+        }
+        imagen.setAttribute("src", fotos[posicion]);
+      }
+      //automatico
+      let animacion = setInterval(avanzar, 2000);
+      imagen.addEventListener("mousemove", () => {
+        clearInterval(animacion);
+      });
+      imagen.addEventListener("mouseleave", () => {
+        animacion = setInterval(avanzar, 2000);
+      });
+    </script>
+
+    <div class="imadena">
+        <div class="imana"><img class="ina n1" src="1i.png" alt="destinos"></div>
+        <div class="imana"><img class="ina n2" src="2i.png" alt="destinos"></div>
+        <div class="imana"><img class="ina n3" src="3i.png" alt="destinos"></div>
+        <div class="imana"><img class="ina n4" src="4i.png" alt="destinos"></div>  
+    </div>
+
+    <div class="imadena2">
+        <div class="imana"><img class="ina n1" src="5i.png" alt="destinos"></div>
+        <div class="imana"><img class="ina n2" src="6i.png" alt="destinos"></div>
+        <div class="imana"><img class="ina n3" src="7i.png" alt="destinos"></div>
+        <div class="imana"><img class="ina n4" src="2i.png" alt="destinos"></div>  
+    </div>
+
+    <footer>
+        <p>Derechos de autor © 2024 Agencia de Viajes. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    gap:2%;
+}
+
+body{
+    background-color: darkblue;
+    overflow-x: hidden;
+}
+
+.encabezado{
+    background-color: white;
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-left: 7%;
+    position: sticky;
+    top: 0;  
+}
+
+.logo{
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.con2{
+    width: 55%;
+    display: flex;
+    gap: 5%;
+}
+
+.imalogo{
+    height: 12vh;
+    object-fit: cover;
+}
+
+.dena{
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1%;
+    margin-top: 3%;
+}
+
+.imadena,.imadena2{
+    width: 100vw;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    gap:2%;
+}
+
+.uno{
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateZ(-4deg) ;
+}
+
+.uno{
+    width: 25%;
+}
+
+.ina{
+    width: 18vw;
+    height: 50vh;
+}
+
+.espacio {
+    perspective: 1000px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15vh;
+}
+
+.tarjetas {
+    transform-style: preserve-3d;
+    position: relative;
+    width: 27vw;
+    height: 55vh;
+    animation-name: rota;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; 
+}
+
+.item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.uno {
+    transform: translateZ(380px);
+}
+.dos {
+    transform: rotateY(60deg) translateZ(380px);
+}
+.tres {
+    transform: rotateY(120deg) translateZ(380px);
+}
+.cuatro {
+    transform: rotateY(180deg) translateZ(380px);
+}
+  .cinco {
+    transform: rotateY(240deg) translateZ(380px);
+}
+.seis {
+    transform: rotateY(300deg) translateZ(380px);
+}
+
+@keyframes rota{
+    100%{
+        transform: rotateY(360deg) ;
+    }
+}
+  
+
+footer{
+    display:flex;
+    width:100vw;
+    height:100px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    align-items:center;
+    justify-content:center;
+    margin-top: 2%;
+}
+
+.ina:hover{
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.796);
+    width: 22vw;
+    height: 55vh;
+    transform: translateY(-3vh);
+}
+
+.conscri,script{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .espacio{
+        display: none;
+    }
+
+    .con2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destna,.destin{
+        display: none;
+    }
+    
+    .imadena,.imadena2{
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .ina{
+        width: 80vw;
+        height: 60vh;
+        margin-bottom: 5%;
+    }
+
+    .ina:hover{
+        width: 85vw;
+        height: 65vh;
+        transform: translateY(0vh);
+    }
+
+    .uno{
+        width: 70vw;
+    }
+
+    .conscri{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: -20%;
+      }
+      .slider {
+        width: 90vw;
+        height: 60vh;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .btn {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rebeccapurple;
+        color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 15px);
+        cursor: pointer;
+      }
+      #right {
+        right: 0px;
+      }
+      #left {
+        left: 0px;
+      }
+      .slider img {
+        width: 90vw;
+        height: 60vh;
+        object-fit: cover;
+        display: flex;
+        align-items: center;
+      }
+}
