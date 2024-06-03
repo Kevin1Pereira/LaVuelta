@@ -165,7 +165,7 @@ footer{
     display: none;
 }
 
-a:hover{
+.ho:hover{
     box-shadow: 0 0 40px darkblue;
 }
 
