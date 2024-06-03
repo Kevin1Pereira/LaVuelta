@@ -210,7 +210,7 @@ footer{
     transform: translateY(-3vh);
 }
 
-.n1:hover,.n2:hover, .n3:hover, .n4:hover{ /*Borde iluminado azul al hacer hover sobre las imagenes de paquetes*/
+.n1:hover,.n2:hover, .n3:hover, .n4:hover, a:hover{ /*Borde iluminado azul al hacer hover sobre las imagenes de paquetes*/
     box-shadow: 0 0 40px darkblue;
 }
 .conscri,script{ /*Elimacion del script y el slider en responsive pc*/
