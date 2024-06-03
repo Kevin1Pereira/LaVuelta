@@ -166,7 +166,7 @@ footer{
 }
 
 .ho:hover{
-    box-shadow: 0 0 40px darkblue;
+    text-shadow: 0 0 40px darkblue;
 }
 
 @media (max-width: 768px) {
